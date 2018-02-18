@@ -6,13 +6,9 @@ import datetime
 
 class SpiderTestPipeline(object):
 
-    def __init__(self, date):
+    def __init__(self):
         self.date = datetime.datetime.now()
         self.item_data = []
-
-    # @classmethod
-    # def from_crawler(cls, crawler):
-    #     return cls(date=crawler.spider.date)
 
     def process_item(self, item, spider):
         self.item_data.append(item)

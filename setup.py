@@ -8,7 +8,7 @@ def read(fname):
 
 setup(
     name="spidertest",
-    version='0.9.2',
+    version='0.9.3',
     author="Santiago Guichon",
     author_email="santiago.guichon@gmail.com",
     description="Spider Scrapy",
@@ -17,6 +17,6 @@ setup(
     entry_points={'scrapy': ['settings = spider_test.settings']},
     install_requires=[
         'pyasn1-modules',
-        'scrapy==1.4.0',
+        'scrapy',
     ]
 )
